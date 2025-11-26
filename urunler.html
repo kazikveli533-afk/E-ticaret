@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tüm Ürünler | Mağaza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+    <h1 class="store-name"><a href="index.html">E-Ticaret</a></h1>
+    
+    <div class="balance-info-container">
+        Bakiye: <span id="user-balance" class="balance-info">0.00₺</span>
+    </div>
+    
+    <nav class="grid-menu-container">
+        <button id="grid-menu-toggle" class="grid-menu-button">☰ Menü</button>
+        <div id="grid-menu" class="grid-menu-dropdown">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="urunler.html">Ürünler</a>
+            <a href="kampanyalar.html">Kampanyalar</a>
+            <a href="destek.html">Destek & Şikayet</a>
+            <a href="para-yatir.html">💰 Para Yatır</a>
+        </div>
+    </nav>
+    
+    <div class="cart-container">
+        <button id="cart-toggle">🛒 Sepet (<span id="cart-count">0</span>)</button>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Sepetim (Mevcut Bakiye: <span class="balance-info">0.00₺</span>)</h3>
+            <ul id="cart-items">
+                </ul>
+            <p id="empty-cart-message">Sepetiniz boş.</p>
+            <p style="padding-top: 10px; border-top: 1px solid #eee;">Toplam: <strong id="total-amount">0.00</strong>₺</p>
+            
+            <button id="clear-cart-button" class="clear-cart-button">Sepeti Temizle</button>
+            
+            <button id="checkout-button">SATIN AL</button>
+        </div>
+    </div>
+</header>
+    
+<main>
+    <section class="products">
+        <h2>📦 Tüm Ürünlerimiz</h2>
+        
+        <div class="product-item" data-id="1" data-name="Ayakkabı: Model X" data-price="500">
+            <img src="image/Ayakkabi.jpg" alt="Ayakkabı Model X" class="product-thumbnail">
+            <div class="product-info">
+                <span>Ayakkabı: Model X - 500₺</span>
+            </div>
+            <a href="urun-detay.html?id=1" class="detail-link">İncele</a> 
+        </div>
+        
+        <div class="product-item" data-id="2" data-name="Çanta: Laptop Pro" data-price="850">
+            <img src="image/Canta.jpg" alt="Çanta Laptop Pro" class="product-thumbnail">
+            <div class="product-info">
+                <span>Çanta: Laptop Pro - 850₺</span>
+            </div>
+            <a href="urun-detay.html?id=2" class="detail-link">İncele</a>
+        </div>
+        
+        <div class="product-item" data-id="3" data-name="Akıllı Saat Z" data-price="1200">
+            <img src="image/Saat.jpeg" alt="Akıllı Saat Z" class="product-thumbnail">
+            <div class="product-info">
+                <span>Akıllı Saat Z - 1200₺</span>
+            </div>
+            <a href="urun-detay.html?id=3" class="detail-link">İncele</a>
+        </div>
+        
+        <div class="product-item" data-id="4" data-name="Şarj Adaptörü" data-price="150">
+            <img src="image/Sarj.jpg" alt="Şarj Adaptörü" class="product-thumbnail">
+            <div class="product-info">
+                <span>Şarj Adaptörü - 150₺</span>
+            </div>
+            <a href="urun-detay.html?id=4" class="detail-link">İncele</a>
+        </div>
+        
+        <div class="product-item" data-id="5" data-name="Oyuncak Araba" data-price="300">
+            <img src="image/oyuncaks.jpg" alt="Uzaktan Kumandalı Oyuncak Araba" class="product-thumbnail">
+            <div class="product-info">
+                <span>Oyuncak Araba - 300₺</span>
+            </div>
+            <a href="urun-detay.html?id=5" class="detail-link">İncele</a>
+        </div>
+        
+        </section>
+</main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
