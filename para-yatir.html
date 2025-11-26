@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanal Bakiye Yükle | E-Ticaret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+    <h1 class="store-name"><a href="index.html">E-Ticaret</a></h1>
+    
+    <div class="balance-info-container">
+        Bakiye: <span id="user-balance" class="balance-info">0.00₺</span>
+    </div>
+    
+    <nav class="grid-menu-container">
+        <button id="grid-menu-toggle" class="grid-menu-button">☰ Menü</button>
+        <div id="grid-menu" class="grid-menu-dropdown">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="urunler.html">Ürünler</a>
+            <a href="kampanyalar.html">Kampanyalar</a>
+            <a href="destek.html">Destek & Şikayet</a>
+            <a href="para-yatir.html">💰 Para Yatır</a>
+        </div>
+    </nav>
+    
+    <div class="cart-container">
+        <button id="cart-toggle">🛒 Sepet (<span id="cart-count">0</span>)</button>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Sepetim (Mevcut Bakiye: <span class="balance-info">0.00₺</span>)</h3>
+            <ul id="cart-items">
+                </ul>
+            <p id="empty-cart-message">Sepetiniz boş.</p>
+            <p style="padding-top: 10px; border-top: 1px solid #eee;">Toplam: <strong id="total-amount">0.00</strong>₺</p>
+            
+            <button id="clear-cart-button" class="clear-cart-button">Sepeti Temizle</button>
+            
+            <button id="checkout-button">SATIN AL</button>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <section class="form-container deposit-container">
+            <h2>💳 Sanal Cüzdan Yükleme Ekranı</h2>
+            <p><strong>Mevcut Bakiyeniz:</strong> <span class="balance-info" style="font-size: 1.2em;">0.00₺</span></p>
+
+            <form id="deposit-form">
+                <div class="deposit-form-group">
+                    <label for="deposit-amount">Yatırmak İstediğiniz Miktar (₺):</label>
+                    <input type="number" id="deposit-amount" min="10" step="10" required placeholder="Örn: 100">
+                </div>
+                
+                <div class="deposit-form-group">
+                    <label for="card-number">Kart Numarası:</label>
+                    <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                </div>
+                <div class="deposit-form-group" style="display: flex; gap: 20px;">
+                    <div>
+                        <label for="card-expiry">Son Kullanma Tarihi:</label>
+                        <input type="text" id="card-expiry" placeholder="AA/YY" required style="width: 80px;">
+                    </div>
+                    <div>
+                        <label for="card-cvv">CVV:</label>
+                        <input type="text" id="card-cvv" placeholder="XXX" maxlength="3" required style="width: 60px;">
+                    </div>
+                </div>
+                <button type="submit" class="submit-button" style="width: 100%;">Bakiyeyi Yükle (Sanal İşlem)</button>
+            </form>
+            
+            <p class="deposit-warning">
+                **Önemli:** Bu sadece bir demo/simülasyon işlemidir. Gerçek kredi kartınızdan **hiçbir ücret çekilmeyecektir**.
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
