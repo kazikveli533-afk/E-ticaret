@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampanyalar | E-Ticaret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+    <h1 class="store-name"><a href="index.html">E-Ticaret</a></h1>
+    
+    <div class="balance-info-container">
+        Bakiye: <span id="user-balance" class="balance-info">0.00₺</span>
+    </div>
+    
+    <nav class="grid-menu-container">
+        <button id="grid-menu-toggle" class="grid-menu-button">☰ Menü</button>
+        <div id="grid-menu" class="grid-menu-dropdown">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="urunler.html">Ürünler</a>
+            <a href="kampanyalar.html">Kampanyalar</a>
+            <a href="destek.html">Destek & Şikayet</a>
+            <a href="para-yatir.html">💰 Para Yatır</a>
+        </div>
+    </nav>
+    
+    <div class="cart-container">
+        <button id="cart-toggle">🛒 Sepet (<span id="cart-count">0</span>)</button>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Sepetim (Mevcut Bakiye: <span class="balance-info">0.00₺</span>)</h3>
+            <ul id="cart-items">
+                </ul>
+            <p id="empty-cart-message">Sepetiniz boş.</p>
+            <p style="padding-top: 10px; border-top: 1px solid #eee;">Toplam: <strong id="total-amount">0.00</strong>₺</p>
+            
+            <button id="clear-cart-button" class="clear-cart-button">Sepeti Temizle</button>
+            
+            <button id="checkout-button">SATIN AL</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="campaigns">
+        <h2>🎁 Güncel Kampanyalar</h2>
+        
+        <div class="product-item" style="border-left: 5px solid var(--accent-color);">
+            <h3>Haftanın Fırsatı: %15 İndirim!</h3>
+            <p>Seçili tüm Çanta modellerinde %15 indirim fırsatını kaçırmayın. Kampanya bu hafta sonuna kadar geçerlidir.</p>
+        </div>
+
+        <div class="product-item" style="border-left: 5px solid var(--secondary-color);">
+            <h3>Yeni Üye Bonusu</h3>
+            <p>İlk kez bakiye yükleyen kullanıcılara, yükledikleri tutarın %5'i kadar ekstra bakiye hediye!</p>
+        </div>
+
+        <div class="product-item" style="border-left: 5px solid var(--success-color);">
+            <h3>Üç Al İki Öde</h3>
+            <p>Aksesuar kategorisindeki ürünlerde geçerli, 3 ürün alana en ucuz olanı bizden hediye.</p>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px;"><a href="urunler.html">İndirimli Ürünleri İncele →</a></p>
+    </section>
+</main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
